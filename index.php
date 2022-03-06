@@ -1,6 +1,6 @@
 <?php
 include('database.php'); 
-$limit = 4;
+$limit = 2;
 $sql = "SELECT COUNT(id) FROM user_data";  
 $rs_result = mysqli_query($conn, $sql);  
 $row = mysqli_fetch_row($rs_result);  
@@ -13,7 +13,7 @@ $total_pages = ceil($total_records / $limit);
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PHP Pagination AJAX</title>
+<title>Pagination AJAX</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,8 +28,7 @@ $total_pages = ceil($total_records / $limit);
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6">
-						<h2>Manage <b>Employees</b>Add New Employee</span></a>
-						<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons"></i> <span>Delete</span></a>						
+					<h2>Pages</h2>
 					</div>
                 </div>
             </div>
